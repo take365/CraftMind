@@ -1,0 +1,15 @@
+{
+  "source_file": "src/sample_data/public_demo_parts/sample_guide_block_b/sample_guide_block_b.dxf",
+  "views": [
+    {
+      "key": "dxf_main",
+      "title": "DXF 入力レンダリング",
+      "subtitle": "上面外形と 5 穴構成を簡易描画",
+      "crop_path": "./assets/cad_input_dxf_guide_block_b/source_render.svg",
+      "svg_path": "./assets/cad_input_dxf_guide_block_b/feature_sketch.svg",
+      "input_panel_label": "入力 CAD プレビュー",
+      "feature_panel_label": "見積用 feature スケッチ",
+      "comparison_note": "左は DXF からの簡易レンダリング、右は見積で使う外形と穴構成の要約です。"
+    }
+  ]
+}

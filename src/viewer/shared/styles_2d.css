@@ -1,0 +1,732 @@
+:root {
+  color-scheme: dark;
+  --bg: #0f1318;
+  --panel: #171c23;
+  --text: #eef2f7;
+  --muted: #a6b0bf;
+  --accent: #7dd3fc;
+  --accent-2: #8bffa8;
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(125, 211, 252, 0.14), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(139, 255, 168, 0.10), transparent 30%),
+    var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: #b7ecff;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-bottom: 20px;
+}
+
+.hero-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.action-link {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 10px 14px;
+  background: rgba(125, 211, 252, 0.12);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.action-link:hover {
+  color: #b7ecff;
+  border-color: rgba(125, 211, 252, 0.28);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 52px);
+  line-height: 1.06;
+}
+
+.lede {
+  margin: 14px 0 0;
+  max-width: 900px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.source-card,
+.view-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.source-card {
+  margin-bottom: 18px;
+  padding: 18px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.section-head h2,
+.view-card h2,
+.panel h3 {
+  margin: 0;
+}
+
+.subline,
+.note {
+  color: var(--muted);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 6px 10px;
+  background: rgba(125, 211, 252, 0.12);
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.source-card img,
+.panel img,
+.panel object {
+  display: block;
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+}
+
+.views {
+  display: grid;
+  gap: 18px;
+}
+
+.view-card {
+  padding: 18px;
+}
+
+.view-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  min-height: 320px;
+}
+
+.panel h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--accent-2);
+}
+
+.panel img,
+.panel object {
+  min-height: 260px;
+  object-fit: contain;
+}
+
+.note {
+  margin: 12px 0 0;
+  font-size: 13px;
+}
+
+.error {
+  margin-top: 20px;
+  padding: 16px;
+  background: #2a1111;
+  color: #ffb8b8;
+  border-radius: 12px;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 1024px) {
+  .view-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.workflow-grid,
+.flow-lanes,
+.flowchart {
+  display: grid;
+  gap: 16px;
+}
+
+.workflow-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flow-lanes {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.workflow-diagram {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.diagram-top-row,
+.diagram-bottom-row {
+  display: grid;
+  gap: 16px 12px;
+  align-items: center;
+}
+
+.diagram-top-row {
+  grid-template-columns: minmax(0, 1fr) 56px minmax(0, 1.15fr) 56px minmax(0, 1.15fr) 56px minmax(0, 1fr);
+}
+
+.diagram-bottom-row {
+  grid-template-columns: minmax(0, 1fr) 56px minmax(0, 1.15fr) 56px minmax(0, 1.15fr) 56px minmax(0, 1fr);
+  grid-template-rows: 34px auto;
+}
+
+.diagram-card {
+  position: relative;
+  min-height: 208px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.diagram-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -12% -28% auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.diagram-card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.diagram-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.diagram-type {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 6px 10px;
+  margin-bottom: 14px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.diagram-input {
+  border-color: rgba(125, 211, 252, 0.22);
+}
+
+.diagram-input::after {
+  background: radial-gradient(circle, rgba(125, 211, 252, 0.16), transparent 68%);
+}
+
+.diagram-input .diagram-type {
+  background: rgba(125, 211, 252, 0.12);
+  color: var(--accent);
+}
+
+.diagram-ai {
+  border-color: rgba(139, 255, 168, 0.24);
+}
+
+.diagram-ai::after {
+  background: radial-gradient(circle, rgba(139, 255, 168, 0.14), transparent 68%);
+}
+
+.diagram-ai .diagram-type {
+  background: rgba(139, 255, 168, 0.12);
+  color: var(--accent-2);
+}
+
+.diagram-program {
+  border-color: rgba(245, 158, 11, 0.28);
+}
+
+.diagram-program::after {
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.16), transparent 68%);
+}
+
+.diagram-program .diagram-type {
+  background: rgba(245, 158, 11, 0.12);
+  color: #ffd089;
+}
+
+.diagram-master {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+  min-height: 168px;
+  border-color: rgba(244, 114, 182, 0.24);
+}
+
+.diagram-master::after {
+  background: radial-gradient(circle, rgba(244, 114, 182, 0.16), transparent 68%);
+}
+
+.diagram-master .diagram-type {
+  background: rgba(244, 114, 182, 0.12);
+  color: #ffb3d6;
+}
+
+.diagram-output {
+  border-color: rgba(125, 211, 252, 0.22);
+}
+
+.diagram-output::after {
+  background: radial-gradient(circle, rgba(125, 211, 252, 0.16), transparent 68%);
+}
+
+.diagram-output .diagram-type {
+  background: rgba(125, 211, 252, 0.12);
+  color: var(--accent);
+}
+
+.diagram-main-arrow,
+.diagram-vertical-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  color: rgba(125, 211, 252, 0.9);
+}
+
+.diagram-vertical-arrow {
+  grid-column: 5 / 6;
+  grid-row: 1 / 2;
+  color: rgba(244, 114, 182, 0.9);
+}
+
+.workflow-caption-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.workflow-caption {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+}
+
+.workflow-caption p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.caption-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.caption-ai {
+  background: rgba(139, 255, 168, 0.12);
+  color: var(--accent-2);
+}
+
+.caption-program {
+  background: rgba(245, 158, 11, 0.12);
+  color: #ffd089;
+}
+
+.caption-master {
+  background: rgba(244, 114, 182, 0.12);
+  color: #ffb3d6;
+}
+
+.caption-output {
+  background: rgba(125, 211, 252, 0.12);
+  color: var(--accent);
+}
+
+.flowchart {
+  grid-template-columns: 1fr 40px 1fr 40px 1fr;
+  align-items: stretch;
+  margin-bottom: 16px;
+}
+
+.summary-card,
+.info-card,
+.state-card,
+.workflow-step,
+.flow-card,
+.flow-node {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.summary-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.summary-link:hover .summary-card {
+  border-color: rgba(125, 211, 252, 0.28);
+  transform: translateY(-2px);
+}
+
+.summary-card.emphasis {
+  background: linear-gradient(180deg, rgba(125, 211, 252, 0.12), rgba(255, 255, 255, 0.03));
+}
+
+.summary-card {
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.summary-card h3,
+.info-card h3,
+.state-card h3,
+.workflow-step h3,
+.flow-card h3,
+.flow-node h3 {
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.workflow-step {
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+}
+
+.workflow-step::after {
+  content: "";
+  position: absolute;
+  inset: auto -20% -40% auto;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(125, 211, 252, 0.12), transparent 68%);
+  pointer-events: none;
+}
+
+.workflow-index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  background: rgba(125, 211, 252, 0.14);
+  border: 1px solid rgba(125, 211, 252, 0.22);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.workflow-step p,
+.flow-card p,
+.flow-node p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.workflow-step ul,
+.flow-card ul,
+.flow-node ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.flow-card {
+  min-height: 190px;
+}
+
+.flow-kicker {
+  margin-bottom: 10px;
+  color: var(--accent-2);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.flow-node {
+  position: relative;
+  min-height: 210px;
+}
+
+.flow-node-type {
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
+.flow-node-input {
+  border-color: rgba(125, 211, 252, 0.28);
+}
+
+.flow-node-ai {
+  border-color: rgba(139, 255, 168, 0.24);
+}
+
+.flow-node-app {
+  border-color: rgba(245, 158, 11, 0.26);
+}
+
+.flow-node-master {
+  border-color: rgba(244, 114, 182, 0.26);
+}
+
+.flow-node-output {
+  border-color: rgba(125, 211, 252, 0.28);
+}
+
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 28px;
+  opacity: 0.8;
+}
+
+.flow-arrow-down,
+.flow-arrow-up {
+  grid-column: 5 / 6;
+  min-height: 26px;
+}
+
+.summary-value {
+  margin: 0;
+  font-size: clamp(22px, 2.3vw, 34px);
+  font-weight: 700;
+}
+
+.summary-note,
+.state-note,
+.state-value {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.estimate-section {
+  margin-top: 16px;
+}
+
+.estimate-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.estimate-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 860px;
+}
+
+.estimate-table th,
+.estimate-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.estimate-table th {
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 13px;
+  color: var(--accent-2);
+}
+
+.price-cell {
+  white-space: nowrap;
+  text-align: right;
+  font-weight: 700;
+}
+
+.state-grid,
+.assumption-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.state-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.assumption-grid {
+  margin-top: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.state-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.state-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 10px;
+  background: rgba(139, 255, 168, 0.12);
+  color: var(--accent-2);
+  font-size: 12px;
+}
+
+.info-card.warn {
+  border-color: rgba(245, 158, 11, 0.34);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.info-card ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 1200px) {
+  .summary-grid,
+  .state-grid,
+  .workflow-grid,
+  .flow-lanes,
+  .workflow-caption-row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .flowchart {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-diagram {
+    grid-template-columns: 1fr;
+  }
+
+  .diagram-top-row,
+  .diagram-bottom-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .diagram-master,
+  .diagram-vertical-arrow {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .diagram-main-arrow,
+  .diagram-vertical-arrow {
+    min-height: 28px;
+    transform: rotate(90deg);
+  }
+
+  .flow-arrow-right,
+  .flow-arrow-down,
+  .flow-arrow-up {
+    grid-column: auto;
+    min-height: 28px;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .summary-grid,
+  .state-grid,
+  .assumption-grid,
+  .workflow-grid,
+  .flow-lanes,
+  .flowchart,
+  .workflow-caption-row {
+    grid-template-columns: 1fr;
+  }
+}

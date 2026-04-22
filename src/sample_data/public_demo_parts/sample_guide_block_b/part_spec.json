@@ -1,0 +1,21 @@
+{
+  "key": "sample_guide_block_b",
+  "name_ja": "サンプルガイドブロック B",
+  "category": "machined_block",
+  "description_ja": "中央φ32の貫通穴と 4-φ8 取り付け穴を持つ加工ブロック。",
+  "authoring_note": "Self-authored synthetic sample for public-safe demos.",
+  "material": "A5052",
+  "surface_treatment": "白アルマイト",
+  "heat_treatment": "なし",
+  "process_summary_ja": "切削 -> 穴加工 -> 面取り -> 表面処理",
+  "dimensions_mm": {
+    "length": 120.0,
+    "width": 70.0,
+    "height": 45.0
+  },
+  "files": {
+    "dxf": "sample_guide_block_b.dxf",
+    "step": "sample_guide_block_b.step",
+    "notes": "notes_ja.md"
+  }
+}

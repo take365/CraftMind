@@ -1,0 +1,381 @@
+{
+  "schema_version": "demo-material-master-v1",
+  "pricing_note": "Demo-only prices. Use weight-based calculation later.",
+  "items": [
+    {
+      "id": "mat_ss400",
+      "code": "SS400",
+      "display_name": "SS400",
+      "family": "steel",
+      "service_families": ["machining", "sheet_metal", "turning"],
+      "demo_price_per_kg_jpy": 280,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide", "surf_electroless_nickel", "surf_trivalent_white"],
+      "source_tags": ["cutting", "sheet_metal", "turning"]
+    },
+    {
+      "id": "mat_s50c",
+      "code": "S50C",
+      "display_name": "S50C",
+      "family": "steel",
+      "service_families": ["machining"],
+      "demo_price_per_kg_jpy": 340,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide", "surf_electroless_nickel", "surf_trivalent_white"],
+      "default_heat_treatment_ids": ["heat_none", "heat_full_quench", "heat_induction", "heat_nitriding"],
+      "source_tags": ["cutting", "heat_treatment"]
+    },
+    {
+      "id": "mat_s45c",
+      "code": "S45C",
+      "display_name": "S45C",
+      "family": "steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 360,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide", "surf_electroless_nickel", "surf_trivalent_white", "surf_hard_chrome"],
+      "default_heat_treatment_ids": ["heat_none", "heat_full_quench", "heat_partial_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_scm415",
+      "code": "SCM415",
+      "display_name": "SCM415",
+      "family": "alloy_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 430,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide", "surf_electroless_nickel", "surf_hard_chrome"],
+      "default_heat_treatment_ids": ["heat_none", "heat_carburizing", "heat_full_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_scm435",
+      "code": "SCM435",
+      "display_name": "SCM435",
+      "family": "alloy_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 460,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide", "surf_electroless_nickel", "surf_hard_chrome"],
+      "default_heat_treatment_ids": ["heat_none", "heat_full_quench", "heat_partial_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_scm420",
+      "code": "SCM420",
+      "display_name": "SCM420",
+      "family": "alloy_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 470,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide", "surf_electroless_nickel"],
+      "default_heat_treatment_ids": ["heat_none", "heat_carburizing"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_suj2",
+      "code": "SUJ2",
+      "display_name": "SUJ2",
+      "family": "bearing_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 680,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide"],
+      "default_heat_treatment_ids": ["heat_none", "heat_vacuum_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_skd11",
+      "code": "SKD11",
+      "display_name": "SKD11",
+      "family": "tool_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 880,
+      "default_surface_treatment_ids": ["surf_none", "surf_dlc", "surf_hard_chrome"],
+      "default_heat_treatment_ids": ["heat_none", "heat_vacuum_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_skd61",
+      "code": "SKD61",
+      "display_name": "SKD61",
+      "family": "tool_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 840,
+      "default_surface_treatment_ids": ["surf_none", "surf_nitriding_process"],
+      "default_heat_treatment_ids": ["heat_none", "heat_vacuum_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_skh51",
+      "code": "SKH51",
+      "display_name": "SKH51",
+      "family": "tool_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 980,
+      "default_surface_treatment_ids": ["surf_none", "surf_dlc"],
+      "default_heat_treatment_ids": ["heat_none", "heat_vacuum_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_sk4",
+      "code": "SK4",
+      "display_name": "SK4",
+      "family": "tool_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 710,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide"],
+      "default_heat_treatment_ids": ["heat_none", "heat_vacuum_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_sk5",
+      "code": "SK5",
+      "display_name": "SK5",
+      "family": "tool_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 720,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide"],
+      "default_heat_treatment_ids": ["heat_none", "heat_vacuum_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_sks3",
+      "code": "SKS3",
+      "display_name": "SKS3",
+      "family": "tool_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 760,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide"],
+      "default_heat_treatment_ids": ["heat_none", "heat_vacuum_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_sks93",
+      "code": "SKS93",
+      "display_name": "SKS93",
+      "family": "tool_steel",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 780,
+      "default_surface_treatment_ids": ["surf_none"],
+      "default_heat_treatment_ids": ["heat_none", "heat_vacuum_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_sus303",
+      "code": "SUS303",
+      "display_name": "SUS303",
+      "family": "stainless",
+      "service_families": ["machining", "turning"],
+      "demo_price_per_kg_jpy": 950,
+      "default_surface_treatment_ids": ["surf_none", "surf_electroless_nickel"],
+      "source_tags": ["cutting", "turning"]
+    },
+    {
+      "id": "mat_sus304",
+      "code": "SUS304",
+      "display_name": "SUS304",
+      "family": "stainless",
+      "service_families": ["machining", "sheet_metal", "turning"],
+      "demo_price_per_kg_jpy": 1020,
+      "default_surface_treatment_ids": ["surf_none", "surf_electroless_nickel"],
+      "source_tags": ["cutting", "sheet_metal", "turning"]
+    },
+    {
+      "id": "mat_sus316",
+      "code": "SUS316",
+      "display_name": "SUS316",
+      "family": "stainless",
+      "service_families": ["sheet_metal", "turning"],
+      "demo_price_per_kg_jpy": 1180,
+      "default_surface_treatment_ids": ["surf_none", "surf_electroless_nickel"],
+      "source_tags": ["sheet_metal", "turning"]
+    },
+    {
+      "id": "mat_sus430",
+      "code": "SUS430",
+      "display_name": "SUS430",
+      "family": "stainless",
+      "service_families": ["sheet_metal", "turning"],
+      "demo_price_per_kg_jpy": 760,
+      "default_surface_treatment_ids": ["surf_none"],
+      "source_tags": ["sheet_metal", "turning"]
+    },
+    {
+      "id": "mat_sus410",
+      "code": "SUS410",
+      "display_name": "SUS410",
+      "family": "stainless",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 830,
+      "default_surface_treatment_ids": ["surf_none", "surf_black_oxide"],
+      "default_heat_treatment_ids": ["heat_none", "heat_full_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_sus440c",
+      "code": "SUS440C",
+      "display_name": "SUS440C",
+      "family": "stainless",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 1320,
+      "default_surface_treatment_ids": ["surf_none"],
+      "default_heat_treatment_ids": ["heat_none", "heat_vacuum_quench"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_spcc",
+      "code": "SPCC",
+      "display_name": "SPCC",
+      "family": "sheet_steel",
+      "service_families": ["sheet_metal"],
+      "demo_price_per_kg_jpy": 220,
+      "default_surface_treatment_ids": ["surf_none", "surf_powder_black", "surf_electroless_nickel", "surf_black_oxide", "surf_trivalent_white", "surf_trivalent_black"],
+      "source_tags": ["sheet_metal"]
+    },
+    {
+      "id": "mat_sphc",
+      "code": "SPHC",
+      "display_name": "SPHC",
+      "family": "sheet_steel",
+      "service_families": ["sheet_metal"],
+      "demo_price_per_kg_jpy": 230,
+      "default_surface_treatment_ids": ["surf_none", "surf_powder_black", "surf_electroless_nickel", "surf_black_oxide", "surf_trivalent_white", "surf_trivalent_black"],
+      "source_tags": ["sheet_metal"]
+    },
+    {
+      "id": "mat_secc",
+      "code": "SECC",
+      "display_name": "SECC",
+      "family": "sheet_steel",
+      "service_families": ["sheet_metal"],
+      "demo_price_per_kg_jpy": 260,
+      "default_surface_treatment_ids": ["surf_none", "surf_powder_black"],
+      "source_tags": ["sheet_metal"]
+    },
+    {
+      "id": "mat_sehc",
+      "code": "SEHC",
+      "display_name": "SEHC",
+      "family": "sheet_steel",
+      "service_families": ["sheet_metal"],
+      "demo_price_per_kg_jpy": 255,
+      "default_surface_treatment_ids": ["surf_none", "surf_powder_black"],
+      "source_tags": ["sheet_metal"]
+    },
+    {
+      "id": "mat_sgcc",
+      "code": "SGCC",
+      "display_name": "SGCC",
+      "family": "sheet_steel",
+      "service_families": ["sheet_metal"],
+      "demo_price_per_kg_jpy": 275,
+      "default_surface_treatment_ids": ["surf_none", "surf_powder_black"],
+      "source_tags": ["sheet_metal", "hole_processing"]
+    },
+    {
+      "id": "mat_a2011",
+      "code": "A2011",
+      "display_name": "A2011",
+      "family": "aluminum",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 780,
+      "default_surface_treatment_ids": ["surf_none", "surf_anodize_white", "surf_anodize_black"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_a2017",
+      "code": "A2017",
+      "display_name": "A2017",
+      "family": "aluminum",
+      "service_families": ["machining", "turning"],
+      "demo_price_per_kg_jpy": 800,
+      "default_surface_treatment_ids": ["surf_none", "surf_anodize_white", "surf_anodize_black"],
+      "source_tags": ["cutting", "turning"]
+    },
+    {
+      "id": "mat_a5052",
+      "code": "A5052",
+      "display_name": "A5052",
+      "family": "aluminum",
+      "service_families": ["machining", "sheet_metal"],
+      "demo_price_per_kg_jpy": 740,
+      "default_surface_treatment_ids": ["surf_none", "surf_anodize_white", "surf_anodize_black", "surf_anodize_black_matte"],
+      "source_tags": ["cutting", "sheet_metal"]
+    },
+    {
+      "id": "mat_a5056",
+      "code": "A5056",
+      "display_name": "A5056",
+      "family": "aluminum",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 760,
+      "default_surface_treatment_ids": ["surf_none", "surf_anodize_white", "surf_anodize_black"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_a6061",
+      "code": "A6061",
+      "display_name": "A6061",
+      "family": "aluminum",
+      "service_families": ["machining", "turning"],
+      "demo_price_per_kg_jpy": 790,
+      "default_surface_treatment_ids": ["surf_none", "surf_anodize_white", "surf_anodize_black"],
+      "source_tags": ["cutting", "turning"]
+    },
+    {
+      "id": "mat_a6063",
+      "code": "A6063",
+      "display_name": "A6063",
+      "family": "aluminum",
+      "service_families": ["turning"],
+      "demo_price_per_kg_jpy": 720,
+      "default_surface_treatment_ids": ["surf_none", "surf_anodize_white", "surf_anodize_black"],
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "mat_a7075",
+      "code": "A7075",
+      "display_name": "A7075",
+      "family": "aluminum",
+      "service_families": ["machining", "turning"],
+      "demo_price_per_kg_jpy": 980,
+      "default_surface_treatment_ids": ["surf_none", "surf_anodize_white", "surf_anodize_black"],
+      "source_tags": ["cutting", "turning"]
+    },
+    {
+      "id": "mat_a1050",
+      "code": "A1050",
+      "display_name": "A1050",
+      "family": "aluminum",
+      "service_families": ["sheet_metal"],
+      "demo_price_per_kg_jpy": 640,
+      "default_surface_treatment_ids": ["surf_none", "surf_anodize_white", "surf_anodize_black", "surf_anodize_black_matte"],
+      "source_tags": ["sheet_metal"]
+    },
+    {
+      "id": "mat_a1100",
+      "code": "A1100",
+      "display_name": "A1100",
+      "family": "aluminum",
+      "service_families": ["sheet_metal"],
+      "demo_price_per_kg_jpy": 620,
+      "default_surface_treatment_ids": ["surf_none", "surf_anodize_white", "surf_anodize_black", "surf_anodize_black_matte"],
+      "source_tags": ["sheet_metal"]
+    },
+    {
+      "id": "mat_c1020",
+      "code": "C1020",
+      "display_name": "C1020",
+      "family": "copper",
+      "service_families": ["sheet_metal"],
+      "demo_price_per_kg_jpy": 1450,
+      "default_surface_treatment_ids": ["surf_none", "surf_electrolytic_nickel", "surf_electroless_nickel", "surf_silver_plating", "surf_gold_plating"],
+      "source_tags": ["sheet_metal"]
+    },
+    {
+      "id": "mat_c1100",
+      "code": "C1100",
+      "display_name": "C1100",
+      "family": "copper",
+      "service_families": ["sheet_metal"],
+      "demo_price_per_kg_jpy": 1380,
+      "default_surface_treatment_ids": ["surf_none", "surf_electrolytic_nickel", "surf_electroless_nickel", "surf_silver_plating", "surf_gold_plating"],
+      "source_tags": ["sheet_metal"]
+    }
+  ]
+}

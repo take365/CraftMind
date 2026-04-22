@@ -1,0 +1,8 @@
+<svg viewBox="0 0 980 380" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="980" height="380" fill="#11161d" />
+  <text x="40" y="36" fill="#eef2f7" font-size="20" font-family="Segoe UI, sans-serif">入力 DXF レンダリング</text>
+  <text x="40" y="64" fill="#a6b0bf" font-size="14" font-family="Segoe UI, sans-serif">sample_guide_block_b.dxf から上面外形と穴構成を簡易描画</text>
+  <polyline points="40.00,340.00 554.29,340.00 554.29,40.00 40.00,40.00" fill="none" stroke="#dbe4ef" stroke-width="1.6" />
+  <line x1="297.14" y1="318.57" x2="297.14" y2="61.43" stroke="#dbe4ef" stroke-width="1.2" /><line x1="61.43" y1="190.00" x2="532.86" y2="190.00" stroke="#dbe4ef" stroke-width="1.2" />
+  <circle cx="297.14" cy="190.00" r="68.57" fill="none" stroke="#7dd3fc" stroke-width="1.8" /><circle cx="125.71" cy="254.29" r="17.14" fill="none" stroke="#7dd3fc" stroke-width="1.8" /><circle cx="468.57" cy="254.29" r="17.14" fill="none" stroke="#7dd3fc" stroke-width="1.8" /><circle cx="125.71" cy="125.71" r="17.14" fill="none" stroke="#7dd3fc" stroke-width="1.8" /><circle cx="468.57" cy="125.71" r="17.14" fill="none" stroke="#7dd3fc" stroke-width="1.8" />
+</svg>

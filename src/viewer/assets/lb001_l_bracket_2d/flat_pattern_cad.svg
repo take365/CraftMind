@@ -1,0 +1,26 @@
+<svg viewBox="0 0 980 520" xmlns="http://www.w3.org/2000/svg">
+  <rect x="120" y="180" width="585" height="180" fill="none" stroke="#e5ecf5" stroke-width="2.4"/>
+  <rect x="210" y="90" width="202" height="90" fill="none" stroke="#e5ecf5" stroke-width="2.4"/>
+  <rect x="502" y="90" width="203" height="90" fill="none" stroke="#e5ecf5" stroke-width="2.4"/>
+  <path d="M120 180 H705" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="7 6"/>
+  <path d="M210 100 V360 M412 100 V360 M502 100 V360" stroke="#6b7280" stroke-width="1.2" stroke-dasharray="7 6"/>
+  <circle cx="266" cy="135" r="11" fill="none" stroke="#0ea5e9" stroke-width="2.4"/>
+  <circle cx="356" cy="135" r="11" fill="none" stroke="#0ea5e9" stroke-width="2.4"/>
+  <circle cx="558" cy="135" r="11" fill="none" stroke="#0ea5e9" stroke-width="2.4"/>
+  <circle cx="648" cy="135" r="11" fill="none" stroke="#0ea5e9" stroke-width="2.4"/>
+  <circle cx="165" cy="315" r="15" fill="none" stroke="#f97316" stroke-width="2.4"/>
+  <circle cx="655" cy="315" r="15" fill="none" stroke="#f97316" stroke-width="2.4"/>
+  <path d="M120 46 H705 M120 46 V68 M705 46 V68" stroke="#0ea5e9" stroke-width="2.2"/>
+  <text x="392" y="34" fill="#94a3b8" font-size="18">260</text>
+  <path d="M120 82 H210 M120 82 V96 M210 82 V96" stroke="#22c55e" stroke-width="2"/>
+  <path d="M210 82 H412 M412 82 V96 M210 82 V96" stroke="#22c55e" stroke-width="2"/>
+  <path d="M412 82 H502 M412 82 V96 M502 82 V96" stroke="#22c55e" stroke-width="2"/>
+  <path d="M502 82 H705 M502 82 V96 M705 82 V96" stroke="#22c55e" stroke-width="2"/>
+  <text x="152" y="72" fill="#94a3b8" font-size="18">40</text>
+  <text x="294" y="72" fill="#94a3b8" font-size="18">90</text>
+  <text x="446" y="72" fill="#94a3b8" font-size="18">40</text>
+  <text x="586" y="72" fill="#94a3b8" font-size="18">90</text>
+      <text x="742" y="130" fill="#94a3b8" font-size="18">4-φ10</text>
+      <text x="742" y="320" fill="#94a3b8" font-size="18">2-φ14</text>
+      <text x="122" y="408" fill="#94a3b8" font-size="18">見積では 260 x 120 x t6 の展開板を素材寸法として採用</text>
+</svg>

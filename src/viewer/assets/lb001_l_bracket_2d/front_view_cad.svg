@@ -1,0 +1,13 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg">
+  <path d="M130 124 V194 A20 20 0 0 0 150 214 H610 A20 20 0 0 0 630 194 V124" fill="none" stroke="#e5ecf5" stroke-width="2.8"/>
+  <path d="M146 124 V192 A10 10 0 0 0 156 202 H604 A10 10 0 0 0 614 192 V124" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M130 68 H630 M130 68 V90 M630 68 V90" stroke="#0ea5e9" stroke-width="2.2"/>
+  <text x="365" y="54" fill="#94a3b8" font-size="18">260</text>
+  <path d="M78 124 V194 M94 124 H78 M94 194 H78" stroke="#22c55e" stroke-width="2"/>
+  <path d="M682 124 V194 M666 124 H682 M666 194 H682" stroke="#22c55e" stroke-width="2"/>
+  <text x="58" y="164" fill="#94a3b8" font-size="18" transform="rotate(-90 58 164)">40</text>
+  <text x="704" y="164" fill="#94a3b8" font-size="18" transform="rotate(-90 704 164)">40</text>
+  <text x="188" y="116" fill="#94a3b8" font-size="18">R6</text>
+  <text x="512" y="116" fill="#94a3b8" font-size="18">R6</text>
+  <text x="172" y="308" fill="#94a3b8" font-size="18">2 箇所の 90° 曲げ後の正面外観を比較確認</text>
+</svg>

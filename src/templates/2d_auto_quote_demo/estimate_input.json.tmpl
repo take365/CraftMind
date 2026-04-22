@@ -1,0 +1,44 @@
+{
+  "part_key": "${part_key}",
+  "part_name": "${product_name}",
+  "drawing_reference": "${drawing_reference}",
+  "quantity": 1,
+  "service_family": "${service_family}",
+  "service_family_label": "${service_family_label}",
+  "process_mode": "estimated",
+  "process_note": "TODO: 図面から読み取った工程根拠を記入してください。",
+  "stock_dimensions_mm": {
+    "length": 100,
+    "width": 100,
+    "height": 10
+  },
+  "material": {
+    "mode": "assumed",
+    "code": "SS400",
+    "note": "TODO: 図面記載またはユーザー指定に合わせて更新してください。"
+  },
+  "surface_treatment": {
+    "mode": "fallback_none",
+    "id": "surf_none",
+    "note": "TODO: 表面処理がある場合は mode と id を更新してください。"
+  },
+  "heat_treatment": {
+    "mode": "fallback_none",
+    "id": "heat_none",
+    "note": "TODO: 熱処理がある場合は mode と id を更新してください。"
+  },
+  "process_plan": [
+    {
+      "id": "proc_machining_profile",
+      "count": 1,
+      "note": "TODO: 最初の工程を更新してください。"
+    }
+  ],
+  "assumptions": [
+    "TODO: 重量計算や工程計算の前提を追記してください。"
+  ],
+  "warnings": [
+    "この見積はデモ表示用の自動引き当てです。正式見積には使えません。",
+    "TODO: 図面読取や工程推定に関する注意を追記してください。"
+  ]
+}

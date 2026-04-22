@@ -1,0 +1,83 @@
+{
+  "source_reference": "src/sample_data/public_demo_drawings/sample_l_bracket_260x120_v1/sample_l_bracket_260x120_v1_drawing.png",
+  "source_image": "./assets/lb001_l_bracket_2d/source_page.png",
+  "original": {
+    "path": "./assets/lb001_l_bracket_2d/original_annotated.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "views": [
+    {
+      "key": "flat_pattern",
+      "title": "展開図",
+      "subtitle": "260 x 120 の切断形状、4-φ10、2-φ14 を確認",
+      "crop": [
+        190,
+        70,
+        980,
+        590
+      ],
+      "accent": "#0ea5e9",
+      "svg": "<svg viewBox=\"0 0 980 520\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"120\" y=\"180\" width=\"585\" height=\"180\" fill=\"none\" stroke=\"#e5ecf5\" stroke-width=\"2.4\"/>\n  <rect x=\"210\" y=\"90\" width=\"202\" height=\"90\" fill=\"none\" stroke=\"#e5ecf5\" stroke-width=\"2.4\"/>\n  <rect x=\"502\" y=\"90\" width=\"203\" height=\"90\" fill=\"none\" stroke=\"#e5ecf5\" stroke-width=\"2.4\"/>\n  <path d=\"M120 180 H705\" stroke=\"#6b7280\" stroke-width=\"1.2\" stroke-dasharray=\"7 6\"/>\n  <path d=\"M210 100 V360 M412 100 V360 M502 100 V360\" stroke=\"#6b7280\" stroke-width=\"1.2\" stroke-dasharray=\"7 6\"/>\n  <circle cx=\"266\" cy=\"135\" r=\"11\" fill=\"none\" stroke=\"#0ea5e9\" stroke-width=\"2.4\"/>\n  <circle cx=\"356\" cy=\"135\" r=\"11\" fill=\"none\" stroke=\"#0ea5e9\" stroke-width=\"2.4\"/>\n  <circle cx=\"558\" cy=\"135\" r=\"11\" fill=\"none\" stroke=\"#0ea5e9\" stroke-width=\"2.4\"/>\n  <circle cx=\"648\" cy=\"135\" r=\"11\" fill=\"none\" stroke=\"#0ea5e9\" stroke-width=\"2.4\"/>\n  <circle cx=\"165\" cy=\"315\" r=\"15\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2.4\"/>\n  <circle cx=\"655\" cy=\"315\" r=\"15\" fill=\"none\" stroke=\"#f97316\" stroke-width=\"2.4\"/>\n  <path d=\"M120 46 H705 M120 46 V68 M705 46 V68\" stroke=\"#0ea5e9\" stroke-width=\"2.2\"/>\n  <text x=\"392\" y=\"34\" fill=\"#94a3b8\" font-size=\"18\">260</text>\n  <path d=\"M120 82 H210 M120 82 V96 M210 82 V96\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <path d=\"M210 82 H412 M412 82 V96 M210 82 V96\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <path d=\"M412 82 H502 M412 82 V96 M502 82 V96\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <path d=\"M502 82 H705 M502 82 V96 M705 82 V96\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <text x=\"152\" y=\"72\" fill=\"#94a3b8\" font-size=\"18\">40</text>\n  <text x=\"294\" y=\"72\" fill=\"#94a3b8\" font-size=\"18\">90</text>\n  <text x=\"446\" y=\"72\" fill=\"#94a3b8\" font-size=\"18\">40</text>\n  <text x=\"586\" y=\"72\" fill=\"#94a3b8\" font-size=\"18\">90</text>\n      <text x=\"742\" y=\"130\" fill=\"#94a3b8\" font-size=\"18\">4-φ10</text>\n      <text x=\"742\" y=\"320\" fill=\"#94a3b8\" font-size=\"18\">2-φ14</text>\n      <text x=\"122\" y=\"408\" fill=\"#94a3b8\" font-size=\"18\">見積では 260 x 120 x t6 の展開板を素材寸法として採用</text>\n</svg>",
+      "input_panel_label": "元図面からの切り出し",
+      "feature_panel_label": "簡易 2D CAD スケッチ",
+      "comparison_note": "添付図面の展開図を基準に、見積では 260 x 120 x t6 の矩形板を素材寸法として扱っています。",
+      "crop_path": "./assets/lb001_l_bracket_2d/flat_pattern_crop.png",
+      "svg_path": "./assets/lb001_l_bracket_2d/flat_pattern_cad.svg",
+      "crop_box": [
+        190,
+        70,
+        980,
+        590
+      ]
+    },
+    {
+      "key": "front_view",
+      "title": "正面図",
+      "subtitle": "完成形の全長 260 と両端 R6 曲げを確認",
+      "crop": [
+        60,
+        610,
+        720,
+        980
+      ],
+      "accent": "#22c55e",
+      "svg": "<svg viewBox=\"0 0 760 420\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M130 124 V194 A20 20 0 0 0 150 214 H610 A20 20 0 0 0 630 194 V124\" fill=\"none\" stroke=\"#e5ecf5\" stroke-width=\"2.8\"/>\n  <path d=\"M146 124 V192 A10 10 0 0 0 156 202 H604 A10 10 0 0 0 614 192 V124\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <path d=\"M130 68 H630 M130 68 V90 M630 68 V90\" stroke=\"#0ea5e9\" stroke-width=\"2.2\"/>\n  <text x=\"365\" y=\"54\" fill=\"#94a3b8\" font-size=\"18\">260</text>\n  <path d=\"M78 124 V194 M94 124 H78 M94 194 H78\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <path d=\"M682 124 V194 M666 124 H682 M666 194 H682\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <text x=\"58\" y=\"164\" fill=\"#94a3b8\" font-size=\"18\" transform=\"rotate(-90 58 164)\">40</text>\n  <text x=\"704\" y=\"164\" fill=\"#94a3b8\" font-size=\"18\" transform=\"rotate(-90 704 164)\">40</text>\n  <text x=\"188\" y=\"116\" fill=\"#94a3b8\" font-size=\"18\">R6</text>\n  <text x=\"512\" y=\"116\" fill=\"#94a3b8\" font-size=\"18\">R6</text>\n  <text x=\"172\" y=\"308\" fill=\"#94a3b8\" font-size=\"18\">2 箇所の 90° 曲げ後の正面外観を比較確認</text>\n</svg>",
+      "input_panel_label": "元図面からの切り出し",
+      "feature_panel_label": "簡易 2D CAD スケッチ",
+      "comparison_note": "正面図は 2 箇所の 90 度曲げ後の外観確認用です。耳の孔位置詳細は展開図とイメージ図を優先しています。",
+      "crop_path": "./assets/lb001_l_bracket_2d/front_view_crop.png",
+      "svg_path": "./assets/lb001_l_bracket_2d/front_view_cad.svg",
+      "crop_box": [
+        60,
+        610,
+        720,
+        980
+      ]
+    },
+    {
+      "key": "side_profile",
+      "title": "側面図",
+      "subtitle": "底面 120、立上り 40、板厚 t6 を確認",
+      "crop": [
+        720,
+        620,
+        1128,
+        944
+      ],
+      "accent": "#f97316",
+      "svg": "<svg viewBox=\"0 0 620 420\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M120 232 H398 A22 22 0 0 0 420 210 V96\" fill=\"none\" stroke=\"#e5ecf5\" stroke-width=\"2.8\"/>\n  <path d=\"M120 218 H384 A10 10 0 0 0 394 208 V96\" fill=\"none\" stroke=\"#cbd5e1\" stroke-width=\"2\"/>\n  <path d=\"M120 318 H420 M120 318 V300 M420 318 V300\" stroke=\"#0ea5e9\" stroke-width=\"2.2\"/>\n  <path d=\"M120 282 H190 M120 282 V264 M190 282 V264\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <path d=\"M190 282 H420 M190 282 V264 M420 282 V264\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <path d=\"M474 96 V190 M458 96 H474 M458 190 H474\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <path d=\"M76 218 V232 M92 218 H76 M92 232 H76\" stroke=\"#f97316\" stroke-width=\"2\"/>\n  <text x=\"248\" y=\"340\" fill=\"#94a3b8\" font-size=\"18\">120</text>\n  <text x=\"146\" y=\"264\" fill=\"#94a3b8\" font-size=\"18\">30</text>\n  <text x=\"288\" y=\"264\" fill=\"#94a3b8\" font-size=\"18\">90</text>\n  <text x=\"492\" y=\"148\" fill=\"#94a3b8\" font-size=\"18\" transform=\"rotate(-90 492 148)\">40</text>\n  <text x=\"46\" y=\"230\" fill=\"#94a3b8\" font-size=\"18\" transform=\"rotate(-90 46 230)\">t6</text>\n  <text x=\"302\" y=\"198\" fill=\"#94a3b8\" font-size=\"18\">R6</text>\n  <text x=\"132\" y=\"376\" fill=\"#94a3b8\" font-size=\"18\">底面 120、立上り 40、内 R6 を確認する比較スケッチ</text>\n</svg>",
+      "input_panel_label": "元図面からの切り出し",
+      "feature_panel_label": "簡易 2D CAD スケッチ",
+      "comparison_note": "側面図から 30 + 90 の奥行きと R6 内側曲げを確認し、標準曲げ 2 回として工程化しています。",
+      "crop_path": "./assets/lb001_l_bracket_2d/side_profile_crop.png",
+      "svg_path": "./assets/lb001_l_bracket_2d/side_profile_cad.svg",
+      "crop_box": [
+        720,
+        620,
+        1128,
+        944
+      ]
+    }
+  ]
+}

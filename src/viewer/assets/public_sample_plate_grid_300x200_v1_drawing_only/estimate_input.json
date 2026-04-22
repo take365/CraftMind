@@ -1,0 +1,51 @@
+{
+  "part_key": "public_sample_plate_grid_300x200_v1_drawing_only",
+  "part_name": "図面画像単体入力デモ / ベースプレート 300x200",
+  "drawing_reference": "src/sample_data/public_demo_drawings/sample_plate_grid_300x200_v1/sample_plate_grid_300x200_v1_drawing.png",
+  "quantity": 1,
+  "service_family": "sheet_metal",
+  "service_family_label": "板金プレート",
+  "process_mode": "estimated",
+  "process_note": "図面画像から読めた外形、材質、板厚、15-φ10 をもとに概算しています。",
+  "stock_dimensions_mm": {
+    "length": 300.0,
+    "width": 200.0,
+    "height": 12.0
+  },
+  "material": {
+    "mode": "drawing_spec",
+    "code": "SS400",
+    "note": "材質 SS400 は図面記載を採用しています。"
+  },
+  "surface_treatment": {
+    "mode": "fallback_none",
+    "id": "surf_none",
+    "note": "図面に表面処理指示がないため、なし扱いです。"
+  },
+  "heat_treatment": {
+    "mode": "drawing_spec",
+    "id": "heat_none",
+    "note": "熱処理はなしとして扱っています。"
+  },
+  "process_plan": [
+    {
+      "id": "proc_sheet_flat_blank",
+      "count": 1,
+      "note": "300 x 200 x t12 のプレートブランクとして計上。"
+    },
+    {
+      "id": "proc_sheet_hole_round",
+      "count": 15,
+      "note": "15-φ10.0 を通し穴として計上。"
+    }
+  ],
+  "assumptions": [
+    "入力は図面画像のみで、寸法と穴数は図面記載から固定しています。",
+    "表面処理は図面記載なしのため、なし扱いです。",
+    "角部 C1 とバリ取りは工程注意として扱い、今回は追加単価にしていません。"
+  ],
+  "warnings": [
+    "このページは図面画像単体入力のデモです。正式見積には使えません。",
+    "OCR 精度、加工可能条件、数量割引、詳細工数は考慮していません。"
+  ]
+}

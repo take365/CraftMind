@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-04-22T15:11:54Z",
+  "kind": "synthetic_public_demo_inputs",
+  "parts": [
+    {
+      "key": "sample_plate_grid_300x200_v1",
+      "name_ja": "サンプルベースプレート 300x200",
+      "category": "plate",
+      "description_ja": "300 x 200 の板に 15-φ10 を 5 x 3 配列した公開向けサンプル。",
+      "authoring_note": "Self-authored synthetic sample for public-safe demos.",
+      "material": "SS400",
+      "surface_treatment": "なし",
+      "heat_treatment": "なし",
+      "process_summary_ja": "レーザー切断 -> 15-φ10 穴加工 -> バリ取り",
+      "dimensions_mm": {
+        "length": 300.0,
+        "width": 200.0,
+        "thickness": 12.0
+      },
+      "files": {
+        "dxf": "sample_plate_grid_300x200_v1.dxf",
+        "step": "sample_plate_grid_300x200_v1.step",
+        "notes": "notes_ja.md"
+      }
+    },
+    {
+      "key": "sample_base_plate_a",
+      "name_ja": "サンプルベースプレート A",
+      "category": "plate",
+      "description_ja": "4-φ14 の取り付け穴を持つ矩形プレート。公開用デモの基本形状。",
+      "authoring_note": "Self-authored synthetic sample for public-safe demos.",
+      "material": "SS400",
+      "surface_treatment": "三価クロメート白",
+      "heat_treatment": "なし",
+      "process_summary_ja": "レーザー切断 -> 穴加工 -> 表面処理",
+      "dimensions_mm": {
+        "length": 220.0,
+        "width": 140.0,
+        "thickness": 12.0
+      },
+      "files": {
+        "dxf": "sample_base_plate_a.dxf",
+        "step": "sample_base_plate_a.step",
+        "notes": "notes_ja.md"
+      }
+    },
+    {
+      "key": "sample_guide_block_b",
+      "name_ja": "サンプルガイドブロック B",
+      "category": "machined_block",
+      "description_ja": "中央φ32の貫通穴と 4-φ8 取り付け穴を持つ加工ブロック。",
+      "authoring_note": "Self-authored synthetic sample for public-safe demos.",
+      "material": "A5052",
+      "surface_treatment": "白アルマイト",
+      "heat_treatment": "なし",
+      "process_summary_ja": "切削 -> 穴加工 -> 面取り -> 表面処理",
+      "dimensions_mm": {
+        "length": 120.0,
+        "width": 70.0,
+        "height": 45.0
+      },
+      "files": {
+        "dxf": "sample_guide_block_b.dxf",
+        "step": "sample_guide_block_b.step",
+        "notes": "notes_ja.md"
+      }
+    },
+    {
+      "key": "sample_sensor_bracket_c",
+      "name_ja": "サンプルセンサーブラケット C",
+      "category": "sheet_metal_bracket",
+      "description_ja": "曲げ 1 回を想定した L 字ブラケット。ベース側 2-φ9、立ち上がり側 2-φ6。",
+      "authoring_note": "Self-authored synthetic sample for public-safe demos.",
+      "material": "SPHC",
+      "surface_treatment": "四三酸化鉄被膜（黒染め）",
+      "heat_treatment": "なし",
+      "process_summary_ja": "レーザー切断 -> 曲げ 1 回 -> 穴加工 -> 黒染め",
+      "dimensions_mm": {
+        "flat_length": 160.0,
+        "width": 60.0,
+        "thickness": 6.0,
+        "formed_height": 76.0
+      },
+      "files": {
+        "dxf": "sample_sensor_bracket_c.dxf",
+        "step": "sample_sensor_bracket_c.step",
+        "notes": "notes_ja.md"
+      }
+    }
+  ]
+}

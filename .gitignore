@@ -1,0 +1,18 @@
+# Repository root: keep only AGENTS.md, .gitignore, and src/ under version control.
+/*
+!/.gitignore
+!/AGENTS.md
+!/README.md
+!/src/
+!/src/**
+
+# Common local noise
+**/__pycache__/
+src/**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/.DS_Store
+**/Thumbs.db
+
+# Local work/cache files that should never be tracked
+.codex

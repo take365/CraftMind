@@ -1,0 +1,29 @@
+{
+  "key": "sample_plate_grid_300x200_v1",
+  "name_ja": "ベースプレート",
+  "drawing_no": "BP-001",
+  "source_type": "self_authored_image",
+  "authoring_note": "ChatGPT generated public-safe drawing image. Image file should be placed manually in this folder.",
+  "recommended_filename": "sample_plate_grid_300x200_v1_drawing.png",
+  "material": "SS400",
+  "surface_treatment": "未記載",
+  "heat_treatment": "なし",
+  "dimensions_mm": {
+    "length": 300.0,
+    "width": 200.0,
+    "thickness": 12.0
+  },
+  "hole_pattern": {
+    "type": "through_hole",
+    "count": 15,
+    "diameter_mm": 10.0,
+    "grid_columns": 5,
+    "grid_rows": 3,
+    "x_chain_mm": [40.0, 55.0, 55.0, 55.0, 55.0, 40.0],
+    "y_chain_mm": [40.0, 60.0, 60.0, 40.0]
+  },
+  "notes_ja": [
+    "角部 C1",
+    "バリ・カエリ除去"
+  ]
+}

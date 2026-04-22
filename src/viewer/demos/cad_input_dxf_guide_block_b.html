@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CAD入力デモ - DXF / サンプルガイドブロック B</title>
+  <link rel="stylesheet" href="../shared/styles_2d.css" />
+</head>
+<body
+  data-analysis="../assets/cad_input_dxf_guide_block_b/analysis.json"
+  data-manifest="../assets/cad_input_dxf_guide_block_b/manifest.json"
+  data-estimate="../assets/cad_input_dxf_guide_block_b/estimate_input.json"
+  data-master-base="../assets/demo_master"
+>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">CAD Input Demo</p>
+      <h1>CAD入力デモ</h1>
+      <p class="subline">対象: DXF / サンプルガイドブロック B</p>
+      <p class="lede">
+        `sample_guide_block_b.dxf` を入力 CAD として受け取り、`part_spec.json` と `notes_ja.md`
+        の補助情報を使って、切削ブロック部品としての仮見積へつなげるデモです。
+        STEP は使わず、2D DXF とメタ情報だけでどこまで見積へ寄せられるかを確認できます。
+      </p>
+    </section>
+
+    <section class="source-card">
+      <div class="section-head">
+        <div>
+          <h2>CAD抽出サマリー</h2>
+          <p class="subline">入力形式、外形、穴構成、見積分類</p>
+        </div>
+        <span class="chip">DXF ingest</span>
+      </div>
+      <div id="cad-summary" class="summary-grid"></div>
+      <div id="cad-sections" class="assumption-grid estimate-section"></div>
+    </section>
+
+    <section class="source-card">
+      <div class="section-head">
+        <div>
+          <h2>概算見積</h2>
+          <p class="subline">DXF 単独では不足する条件を part_spec / notes で補完しています</p>
+        </div>
+        <span class="chip">概算 5,436 円</span>
+      </div>
+      <div id="estimate-summary" class="summary-grid"></div>
+      <div id="estimate-details" class="estimate-section"></div>
+      <div id="estimate-assumptions" class="estimate-section"></div>
+    </section>
+
+    <section id="views" class="views"></section>
+  </main>
+
+  <script type="module" src="../shared/cad_analysis.js"></script>
+  <script type="module" src="../shared/quote_2d.js"></script>
+</body>
+</html>

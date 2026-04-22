@@ -1,0 +1,187 @@
+from __future__ import annotations
+
+import json
+import subprocess
+from dataclasses import asdict, dataclass
+from pathlib import Path
+
+from PIL import Image, ImageDraw, ImageFont
+
+
+ROOT = Path(__file__).resolve().parents[2]
+SOURCE_PDF = ROOT / "${drawing_reference}"
+OUT_DIR = ROOT / "src" / "viewer" / "assets" / "${asset_key}"
+SOURCE_IMAGE = OUT_DIR / "source_page.png"
+
+
+@dataclass(frozen=True)
+class ViewSpec:
+    key: str
+    title: str
+    subtitle: str
+    crop: tuple[int, int, int, int]
+    accent: str
+    svg: str
+
+
+def load_font(size: int = 24) -> ImageFont.ImageFont:
+    candidates = [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "C:/Windows/Fonts/arial.ttf",
+        "C:/Windows/Fonts/segoeui.ttf",
+        "C:/Windows/Fonts/msgothic.ttc",
+    ]
+    for path in candidates:
+        if Path(path).exists():
+            try:
+                return ImageFont.truetype(path, size=size)
+            except Exception:
+                pass
+    return ImageFont.load_default()
+
+
+def render_pdf_preview() -> None:
+    if not SOURCE_PDF.exists():
+        raise FileNotFoundError(f"source pdf not found: {SOURCE_PDF}")
+
+    OUT_DIR.mkdir(parents=True, exist_ok=True)
+    command = [
+        "convert",
+        "-density",
+        "180",
+        f"{SOURCE_PDF}[0]",
+        "-background",
+        "white",
+        "-alpha",
+        "remove",
+        str(SOURCE_IMAGE),
+    ]
+    subprocess.run(command, check=True)
+
+
+def draw_label(
+    draw: ImageDraw.ImageDraw,
+    box: tuple[int, int, int, int],
+    text: str,
+    fill: str,
+    font: ImageFont.ImageFont,
+) -> None:
+    x0, y0, x1, y1 = box
+    draw.rounded_rectangle(box, radius=14, outline=fill, width=7)
+    text_box = draw.textbbox((0, 0), text, font=font)
+    width = text_box[2] - text_box[0]
+    height = text_box[3] - text_box[1]
+    tx = x0 + 16
+    ty = max(16, y0 + 12)
+    bg = (tx - 10, ty - 10, tx + width + 10, ty + height + 10)
+    draw.rounded_rectangle(bg, radius=8, fill=(255, 255, 255))
+    draw.text((tx, ty), text, fill=fill, font=font)
+
+
+def svg_view_01() -> str:
+    return """
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg">
+  <rect x="90" y="100" width="600" height="220" fill="none" stroke="#e5ecf5" stroke-width="2.4"/>
+  <path d="M90 210 H690" stroke="#65707d" stroke-width="1.2" stroke-dasharray="6 5"/>
+  <circle cx="210" cy="210" r="22" fill="none" stroke="#7dd3fc" stroke-width="2.2"/>
+  <circle cx="570" cy="210" r="22" fill="none" stroke="#7dd3fc" stroke-width="2.2"/>
+  <text x="90" y="70" fill="#a6b0bf" font-size="20">TODO: 主比較ビューを更新</text>
+  <text x="90" y="390" fill="#a6b0bf" font-size="18">比較用の簡易 2D CAD</text>
+</svg>
+""".strip()
+
+
+def svg_view_02() -> str:
+    return """
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg">
+  <path d="M120 120 H640 V320 H120 Z" fill="none" stroke="#e5ecf5" stroke-width="2.4"/>
+  <path d="M120 220 H640" stroke="#65707d" stroke-width="1.2" stroke-dasharray="6 5"/>
+  <text x="120" y="80" fill="#a6b0bf" font-size="20">TODO: 第2ビューを更新</text>
+  <text x="120" y="390" fill="#a6b0bf" font-size="18">比較用の簡易 2D CAD</text>
+</svg>
+""".strip()
+
+
+def build_views() -> list[ViewSpec]:
+    return [
+        ViewSpec(
+            key="view_01",
+            title="ビュー 1",
+            subtitle="TODO: 主比較ビューの説明",
+            crop=(120, 120, 920, 760),
+            accent="#7dd3fc",
+            svg=svg_view_01(),
+        ),
+        ViewSpec(
+            key="view_02",
+            title="ビュー 2",
+            subtitle="TODO: 補助比較ビューの説明",
+            crop=(980, 120, 1780, 760),
+            accent="#8bffa8",
+            svg=svg_view_02(),
+        ),
+    ]
+
+
+def save_svg(path: Path, content: str) -> None:
+    path.write_text(content, encoding="utf-8")
+
+
+def make_original_with_boxes(img: Image.Image, views: list[ViewSpec]) -> Image.Image:
+    annotated = img.convert("RGB").copy()
+    draw = ImageDraw.Draw(annotated)
+    font = load_font(28)
+    for view in views:
+        draw_label(draw, view.crop, view.title, view.accent, font)
+    return annotated
+
+
+def generate() -> dict:
+    render_pdf_preview()
+    views = build_views()
+    img = Image.open(SOURCE_IMAGE)
+
+    annotated = make_original_with_boxes(img, views)
+    annotated_path = OUT_DIR / "original_annotated.png"
+    annotated.save(annotated_path)
+
+    manifest = {
+        "source_pdf": str(SOURCE_PDF),
+        "source_image": str(SOURCE_IMAGE),
+        "original": {
+            "path": "./assets/${asset_key}/original_annotated.png",
+            "width": annotated.width,
+            "height": annotated.height,
+        },
+        "views": [],
+    }
+
+    for view in views:
+        crop = img.crop(view.crop)
+        crop_path = OUT_DIR / f"{view.key}_crop.png"
+        crop.save(crop_path)
+
+        svg_path = OUT_DIR / f"{view.key}_cad.svg"
+        save_svg(svg_path, view.svg)
+
+        manifest["views"].append(
+            {
+                **asdict(view),
+                "crop_path": f"./assets/${asset_key}/{view.key}_crop.png",
+                "svg_path": f"./assets/${asset_key}/{view.key}_cad.svg",
+                "crop_box": list(view.crop),
+            }
+        )
+
+    manifest_path = OUT_DIR / "manifest.json"
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    return manifest
+
+
+def main() -> None:
+    manifest = generate()
+    print(json.dumps(manifest, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,68 @@
+{
+  "title": "CAD入力デモ",
+  "subtitle": "sample_guide_block_b.dxf + part_spec.json + notes_ja.md からの仮見積",
+  "summary_cards": [
+    {
+      "label": "入力形式",
+      "value": "DXF + メタ情報",
+      "note": "STEP は未使用"
+    },
+    {
+      "label": "外形",
+      "value": "120.0 x 70.0 x 45.0 mm",
+      "note": "part_spec.json の寸法を採用"
+    },
+    {
+      "label": "穴構成",
+      "value": "中心 φ32 x 1 / 取付 φ8 x 4",
+      "note": "DXF 円要素 5 個を集計"
+    },
+    {
+      "label": "見積分類",
+      "value": "切削部品",
+      "note": "machined_block として仮見積"
+    }
+  ],
+  "sections": [
+    {
+      "title": "入力ソース",
+      "items": [
+        "DXF: src/sample_data/public_demo_parts/sample_guide_block_b/sample_guide_block_b.dxf",
+        "仕様: src/sample_data/public_demo_parts/sample_guide_block_b/part_spec.json",
+        "メモ: src/sample_data/public_demo_parts/sample_guide_block_b/notes_ja.md",
+        "STEP は今回のデモでは使用しない"
+      ]
+    },
+    {
+      "title": "抽出メトリクス",
+      "items": [
+        "DXF bbox: 120.0 x 70.0 mm",
+        "円要素: 5",
+        "中心穴候補: φ32 x 1",
+        "取付穴候補: φ8 x 4"
+      ]
+    },
+    {
+      "title": "見積仮定",
+      "items": [
+        "材質: A5052",
+        "表面処理: 白アルマイト",
+        "熱処理: なし",
+        "想定工程: 切削 -> 穴加工 -> 面取り -> 表面処理"
+      ]
+    },
+    {
+      "title": "notes_ja.md 要約",
+      "items": [
+        "カテゴリ: machined_block",
+        "材質: A5052",
+        "表面処理: 白アルマイト",
+        "熱処理: なし",
+        "想定工程: 切削 -> 穴加工 -> 面取り -> 表面処理",
+        "中心穴の周りに対称な取り付け穴を持つ標準的な加工ブロック想定です。",
+        "2D CAD は上面基準、STEP は外形と主要穴だけを示すワイヤーフレームです。",
+        "熱処理なしで、表面処理は白アルマイトの仮設定です。"
+      ]
+    }
+  ]
+}

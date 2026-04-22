@@ -1,0 +1,22 @@
+{
+  "key": "sample_sensor_bracket_c",
+  "name_ja": "サンプルセンサーブラケット C",
+  "category": "sheet_metal_bracket",
+  "description_ja": "曲げ 1 回を想定した L 字ブラケット。ベース側 2-φ9、立ち上がり側 2-φ6。",
+  "authoring_note": "Self-authored synthetic sample for public-safe demos.",
+  "material": "SPHC",
+  "surface_treatment": "四三酸化鉄被膜（黒染め）",
+  "heat_treatment": "なし",
+  "process_summary_ja": "レーザー切断 -> 曲げ 1 回 -> 穴加工 -> 黒染め",
+  "dimensions_mm": {
+    "flat_length": 160.0,
+    "width": 60.0,
+    "thickness": 6.0,
+    "formed_height": 76.0
+  },
+  "files": {
+    "dxf": "sample_sensor_bracket_c.dxf",
+    "step": "sample_sensor_bracket_c.step",
+    "notes": "notes_ja.md"
+  }
+}

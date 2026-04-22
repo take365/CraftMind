@@ -1,0 +1,10 @@
+{
+  "schema_version": "demo-master-v1",
+  "description": "Demo masters for quotation lookup.",
+  "files": {
+    "materials": "./material_master.json",
+    "processes": "./process_master.json",
+    "surface_treatments": "./surface_treatment_master.json",
+    "heat_treatments": "./heat_treatment_master.json"
+  }
+}

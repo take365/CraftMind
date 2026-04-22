@@ -1,0 +1,16 @@
+<svg viewBox="0 0 620 420" xmlns="http://www.w3.org/2000/svg">
+  <path d="M120 232 H398 A22 22 0 0 0 420 210 V96" fill="none" stroke="#e5ecf5" stroke-width="2.8"/>
+  <path d="M120 218 H384 A10 10 0 0 0 394 208 V96" fill="none" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M120 318 H420 M120 318 V300 M420 318 V300" stroke="#0ea5e9" stroke-width="2.2"/>
+  <path d="M120 282 H190 M120 282 V264 M190 282 V264" stroke="#22c55e" stroke-width="2"/>
+  <path d="M190 282 H420 M190 282 V264 M420 282 V264" stroke="#22c55e" stroke-width="2"/>
+  <path d="M474 96 V190 M458 96 H474 M458 190 H474" stroke="#22c55e" stroke-width="2"/>
+  <path d="M76 218 V232 M92 218 H76 M92 232 H76" stroke="#f97316" stroke-width="2"/>
+  <text x="248" y="340" fill="#94a3b8" font-size="18">120</text>
+  <text x="146" y="264" fill="#94a3b8" font-size="18">30</text>
+  <text x="288" y="264" fill="#94a3b8" font-size="18">90</text>
+  <text x="492" y="148" fill="#94a3b8" font-size="18" transform="rotate(-90 492 148)">40</text>
+  <text x="46" y="230" fill="#94a3b8" font-size="18" transform="rotate(-90 46 230)">t6</text>
+  <text x="302" y="198" fill="#94a3b8" font-size="18">R6</text>
+  <text x="132" y="376" fill="#94a3b8" font-size="18">底面 120、立上り 40、内 R6 を確認する比較スケッチ</text>
+</svg>

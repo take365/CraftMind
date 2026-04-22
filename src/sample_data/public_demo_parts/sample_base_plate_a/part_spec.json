@@ -1,0 +1,21 @@
+{
+  "key": "sample_base_plate_a",
+  "name_ja": "サンプルベースプレート A",
+  "category": "plate",
+  "description_ja": "4-φ14 の取り付け穴を持つ矩形プレート。公開用デモの基本形状。",
+  "authoring_note": "Self-authored synthetic sample for public-safe demos.",
+  "material": "SS400",
+  "surface_treatment": "三価クロメート白",
+  "heat_treatment": "なし",
+  "process_summary_ja": "レーザー切断 -> 穴加工 -> 表面処理",
+  "dimensions_mm": {
+    "length": 220.0,
+    "width": 140.0,
+    "thickness": 12.0
+  },
+  "files": {
+    "dxf": "sample_base_plate_a.dxf",
+    "step": "sample_base_plate_a.step",
+    "notes": "notes_ja.md"
+  }
+}

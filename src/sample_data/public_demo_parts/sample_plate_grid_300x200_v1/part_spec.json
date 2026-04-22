@@ -1,0 +1,21 @@
+{
+  "key": "sample_plate_grid_300x200_v1",
+  "name_ja": "サンプルベースプレート 300x200",
+  "category": "plate",
+  "description_ja": "300 x 200 の板に 15-φ10 を 5 x 3 配列した公開向けサンプル。",
+  "authoring_note": "Self-authored synthetic sample for public-safe demos.",
+  "material": "SS400",
+  "surface_treatment": "なし",
+  "heat_treatment": "なし",
+  "process_summary_ja": "レーザー切断 -> 15-φ10 穴加工 -> バリ取り",
+  "dimensions_mm": {
+    "length": 300.0,
+    "width": 200.0,
+    "thickness": 12.0
+  },
+  "files": {
+    "dxf": "sample_plate_grid_300x200_v1.dxf",
+    "step": "sample_plate_grid_300x200_v1.step",
+    "notes": "notes_ja.md"
+  }
+}

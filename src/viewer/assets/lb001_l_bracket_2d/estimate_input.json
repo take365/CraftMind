@@ -1,0 +1,59 @@
+{
+  "part_key": "lb001_l_bracket",
+  "part_name": "Lブラケット LB-001",
+  "drawing_reference": "src/sample_data/public_demo_drawings/sample_l_bracket_260x120_v1/sample_l_bracket_260x120_v1_drawing.png",
+  "quantity": 1,
+  "service_family": "sheet_metal",
+  "service_family_label": "板金部品",
+  "process_mode": "estimated",
+  "process_note": "展開図、側面図、曲げ条件表から、板金プレート抜き 1、丸穴 6、90° 内側曲げ 2 の板金部品として引き当てています。",
+  "stock_dimensions_mm": {
+    "length": 260,
+    "width": 120,
+    "height": 6
+  },
+  "material": {
+    "mode": "drawing_spec",
+    "code": "SS400",
+    "note": "図面左上に材質 SS400 の明記があります。"
+  },
+  "surface_treatment": {
+    "mode": "drawing_spec",
+    "id": "surf_none",
+    "note": "表題欄の表面処理が `-` で、個別の表面処理指示も読めないため、なしとして扱います。"
+  },
+  "heat_treatment": {
+    "mode": "fallback_none",
+    "id": "heat_none",
+    "note": "熱処理の個別指示が図面画像内で確認できないため、なしとして計算します。"
+  },
+  "process_plan": [
+    {
+      "id": "proc_sheet_flat_blank",
+      "count": 1,
+      "note": "展開図の切断形状 1 部品を板金ブランクとして計上します。"
+    },
+    {
+      "id": "proc_sheet_hole_round",
+      "count": 6,
+      "note": "耳部の 4-φ10 と底板側の 2-φ14 を通し穴として合算しています。"
+    },
+    {
+      "id": "proc_sheet_bend_standard",
+      "count": 2,
+      "note": "曲げ条件表の 90° 内側曲げ 2 箇所を標準曲げとして計上します。"
+    }
+  ],
+  "assumptions": [
+    "素材重量は展開寸法 260 x 120 x t6 mm の単純角板として計算し、穴抜きや曲げ伸び差は控除していません。",
+    "4-φ10 の配置は図中の注記と右上イメージ図を優先し、展開図の視認しづらい箇所は補完しています。",
+    "バリ取り・面取り除去は図面注記にありますが、デモ用工程マスターに独立費目がないため工程費へ含めていません。",
+    "価格はデモ用マスターに基づく概算であり、正式見積の単価体系とは一致しません。"
+  ],
+  "warnings": [
+    "この見積はデモ表示用の自動引き当てです。正式見積には使えません。",
+    "耳部の 4-φ10 は展開図単体では全穴が明瞭ではないため、注記 `4-φ10` とイメージ図を併用して解釈しています。",
+    "曲げ R6 は設備条件や板取り方向で実際の金型選定が変わる可能性があります。",
+    "一般公差 ±0.5 は読み取れますが、穴位置精度や後工程治具条件まではこのデモに反映していません。"
+  ]
+}

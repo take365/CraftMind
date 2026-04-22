@@ -1,0 +1,294 @@
+{
+  "schema_version": "demo-process-master-v1",
+  "pricing_note": "Demo-only process prices. Setup + run pricing.",
+  "items": [
+    {
+      "id": "proc_machining_profile",
+      "display_name": "切削 外形加工",
+      "service_family": "machining",
+      "demo_setup_price_jpy": 1800,
+      "demo_run_price_jpy": 950,
+      "demo_run_unit": "part",
+      "source_tags": ["cutting"]
+    },
+    {
+      "id": "proc_machining_through_hole",
+      "display_name": "切削 通し穴",
+      "service_family": "machining",
+      "demo_setup_price_jpy": 300,
+      "demo_run_price_jpy": 120,
+      "demo_run_unit": "feature",
+      "source_tags": ["cutting", "machining_hole"]
+    },
+    {
+      "id": "proc_machining_precision_hole",
+      "display_name": "切削 精度穴",
+      "service_family": "machining",
+      "demo_setup_price_jpy": 450,
+      "demo_run_price_jpy": 240,
+      "demo_run_unit": "feature",
+      "source_tags": ["cutting", "machining_hole"]
+    },
+    {
+      "id": "proc_machining_tap",
+      "display_name": "切削 タップ穴",
+      "service_family": "machining",
+      "demo_setup_price_jpy": 450,
+      "demo_run_price_jpy": 220,
+      "demo_run_unit": "feature",
+      "source_tags": ["cutting", "machining_hole"]
+    },
+    {
+      "id": "proc_machining_pipe_taper_thread",
+      "display_name": "切削 管用テーパねじ",
+      "service_family": "machining",
+      "demo_setup_price_jpy": 650,
+      "demo_run_price_jpy": 420,
+      "demo_run_unit": "feature",
+      "source_tags": ["cutting", "machining_hole"]
+    },
+    {
+      "id": "proc_machining_insert",
+      "display_name": "切削 ねじインサート",
+      "service_family": "machining",
+      "demo_setup_price_jpy": 700,
+      "demo_run_price_jpy": 380,
+      "demo_run_unit": "feature",
+      "source_tags": ["cutting", "machining_hole"]
+    },
+    {
+      "id": "proc_machining_pocket",
+      "display_name": "切削 ポケット加工",
+      "service_family": "machining",
+      "demo_setup_price_jpy": 800,
+      "demo_run_price_jpy": 260,
+      "demo_run_unit": "feature",
+      "source_tags": ["cutting"]
+    },
+    {
+      "id": "proc_sheet_flat_blank",
+      "display_name": "板金 プレート抜き",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 1200,
+      "demo_run_price_jpy": 520,
+      "demo_run_unit": "part",
+      "source_tags": ["sheet_metal"]
+    },
+    {
+      "id": "proc_sheet_bend_standard",
+      "display_name": "板金 標準曲げ",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 650,
+      "demo_run_price_jpy": 240,
+      "demo_run_unit": "bend",
+      "source_tags": ["sheet_metal", "bend"]
+    },
+    {
+      "id": "proc_sheet_bend_angle",
+      "display_name": "板金 角度指定曲げ",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 900,
+      "demo_run_price_jpy": 320,
+      "demo_run_unit": "bend",
+      "source_tags": ["sheet_metal", "bend"]
+    },
+    {
+      "id": "proc_sheet_bend_hemming",
+      "display_name": "板金 ヘミング曲げ",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 1100,
+      "demo_run_price_jpy": 420,
+      "demo_run_unit": "bend",
+      "source_tags": ["sheet_metal", "bend"]
+    },
+    {
+      "id": "proc_sheet_bend_r",
+      "display_name": "板金 R曲げ",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 950,
+      "demo_run_price_jpy": 360,
+      "demo_run_unit": "bend",
+      "source_tags": ["sheet_metal", "bend"]
+    },
+    {
+      "id": "proc_sheet_cutup_form",
+      "display_name": "板金 切起こし",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 900,
+      "demo_run_price_jpy": 380,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "bend"]
+    },
+    {
+      "id": "proc_sheet_caulking",
+      "display_name": "板金 カシメ",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 900,
+      "demo_run_price_jpy": 260,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "bend"]
+    },
+    {
+      "id": "proc_sheet_emboss",
+      "display_name": "板金 エンボス加工",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 850,
+      "demo_run_price_jpy": 250,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "bend"]
+    },
+    {
+      "id": "proc_sheet_hole_round",
+      "display_name": "板金 通し穴",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 220,
+      "demo_run_price_jpy": 90,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "hole_processing"]
+    },
+    {
+      "id": "proc_sheet_hole_slot",
+      "display_name": "板金 長穴",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 250,
+      "demo_run_price_jpy": 120,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "hole_processing"]
+    },
+    {
+      "id": "proc_sheet_hole_square",
+      "display_name": "板金 角穴",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 300,
+      "demo_run_price_jpy": 140,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "hole_processing"]
+    },
+    {
+      "id": "proc_sheet_hole_tap",
+      "display_name": "板金 タップ穴",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 350,
+      "demo_run_price_jpy": 180,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "hole_processing"]
+    },
+    {
+      "id": "proc_sheet_hole_burring_tap",
+      "display_name": "板金 バーリングタップ",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 450,
+      "demo_run_price_jpy": 260,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "hole_processing"]
+    },
+    {
+      "id": "proc_sheet_hole_countersink",
+      "display_name": "板金 皿穴",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 320,
+      "demo_run_price_jpy": 160,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "hole_processing"]
+    },
+    {
+      "id": "proc_sheet_hole_h7",
+      "display_name": "板金 H7公差穴",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 520,
+      "demo_run_price_jpy": 260,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "hole_processing"]
+    },
+    {
+      "id": "proc_sheet_nut_weld",
+      "display_name": "板金 ナット溶接",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 700,
+      "demo_run_price_jpy": 320,
+      "demo_run_unit": "feature",
+      "source_tags": ["sheet_metal", "hole_processing"]
+    },
+    {
+      "id": "proc_sheet_weld_seal",
+      "display_name": "板金 シール溶接",
+      "service_family": "sheet_metal",
+      "demo_setup_price_jpy": 1500,
+      "demo_run_price_jpy": 480,
+      "demo_run_unit": "seam",
+      "source_tags": ["sheet_metal", "weld"]
+    },
+    {
+      "id": "proc_turning_general",
+      "display_name": "旋盤 標準旋削",
+      "service_family": "turning",
+      "demo_setup_price_jpy": 2000,
+      "demo_run_price_jpy": 980,
+      "demo_run_unit": "part",
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "proc_turning_od",
+      "display_name": "旋盤 外径加工",
+      "service_family": "turning",
+      "demo_setup_price_jpy": 600,
+      "demo_run_price_jpy": 260,
+      "demo_run_unit": "feature",
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "proc_turning_id",
+      "display_name": "旋盤 内径加工",
+      "service_family": "turning",
+      "demo_setup_price_jpy": 700,
+      "demo_run_price_jpy": 300,
+      "demo_run_unit": "feature",
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "proc_turning_face",
+      "display_name": "旋盤 端面加工",
+      "service_family": "turning",
+      "demo_setup_price_jpy": 450,
+      "demo_run_price_jpy": 140,
+      "demo_run_unit": "feature",
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "proc_turning_groove",
+      "display_name": "旋盤 溝入れ",
+      "service_family": "turning",
+      "demo_setup_price_jpy": 700,
+      "demo_run_price_jpy": 260,
+      "demo_run_unit": "feature",
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "proc_turning_thread",
+      "display_name": "旋盤 ねじ切り",
+      "service_family": "turning",
+      "demo_setup_price_jpy": 700,
+      "demo_run_price_jpy": 320,
+      "demo_run_unit": "feature",
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "proc_turning_drill",
+      "display_name": "旋盤 穴あけ",
+      "service_family": "turning",
+      "demo_setup_price_jpy": 500,
+      "demo_run_price_jpy": 160,
+      "demo_run_unit": "feature",
+      "source_tags": ["turning"]
+    },
+    {
+      "id": "proc_turning_partoff",
+      "display_name": "旋盤 突切り",
+      "service_family": "turning",
+      "demo_setup_price_jpy": 350,
+      "demo_run_price_jpy": 120,
+      "demo_run_unit": "part",
+      "source_tags": ["turning"]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2D図面自動見積デモ - Lブラケット LB-001</title>
+  <link rel="stylesheet" href="../shared/styles_2d.css" />
+</head>
+<body
+  data-manifest="../assets/lb001_l_bracket_2d/manifest.json"
+  data-estimate="../assets/lb001_l_bracket_2d/estimate_input.json"
+  data-master-base="../assets/demo_master"
+>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">2D 比較出力</p>
+      <h1>2D図面自動見積デモ</h1>
+      <p class="subline">対象製品: Lブラケット LB-001</p>
+      <p class="lede">
+        このページでは、会話添付の図面画像をもとに再構成した展開図、正面図、側面図を
+        簡易 2D CAD スケッチと並べて比較できます。見積は SS400、展開 260 x 120 x t6、
+        2 回の 90° 曲げ、4-φ10、2-φ14 を前提に固定し、デモ用マスターから
+        自動概算を表示しています。
+      </p>
+    </section>
+
+    <section class="source-card">
+      <div class="section-head">
+        <div>
+          <h2>概算見積</h2>
+          <p class="subline">図面記載、推定、仮定を分けて表示します</p>
+        </div>
+        <span class="chip">概算 4,022 円</span>
+      </div>
+      <div id="estimate-summary" class="summary-grid"></div>
+      <div id="estimate-details" class="estimate-section"></div>
+      <div id="estimate-assumptions" class="estimate-section"></div>
+    </section>
+
+    <section class="source-card">
+      <div class="section-head">
+        <h2>元図面の注釈付きビュー</h2>
+        <span class="chip">添付図面ベース</span>
+      </div>
+      <img src="../assets/lb001_l_bracket_2d/original_annotated.png" alt="annotated lb001_l_bracket drawing" />
+    </section>
+
+    <section id="views" class="views"></section>
+  </main>
+
+  <script type="module" src="../shared/quote_2d.js"></script>
+</body>
+</html>

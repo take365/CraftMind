@@ -1,0 +1,25 @@
+<svg viewBox="0 0 980 420" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="980" height="420" fill="#11161d" />
+  <text x="42" y="42" fill="#eef2f7" font-size="24" font-family="Segoe UI, sans-serif">図面読取結果の要約</text>
+  <text x="42" y="78" fill="#a6b0bf" font-size="16" font-family="Segoe UI, sans-serif">画像入力から固定できた見積条件を整理</text>
+
+  <rect x="42" y="108" width="420" height="120" rx="18" fill="#171d26" stroke="#314155" />
+  <text x="62" y="144" fill="#7dd3fc" font-size="15" font-family="Segoe UI, sans-serif">BASIC</text>
+  <text x="62" y="178" fill="#eef2f7" font-size="18" font-family="Segoe UI, sans-serif">材質: SS400</text>
+  <text x="62" y="208" fill="#eef2f7" font-size="18" font-family="Segoe UI, sans-serif">板厚: t12.0</text>
+  <text x="62" y="238" fill="#eef2f7" font-size="18" font-family="Segoe UI, sans-serif">外形: 300.0 x 200.0 mm</text>
+
+  <rect x="504" y="108" width="434" height="120" rx="18" fill="#171d26" stroke="#314155" />
+  <text x="524" y="144" fill="#8bffa8" font-size="15" font-family="Segoe UI, sans-serif">HOLE PATTERN</text>
+  <text x="524" y="178" fill="#eef2f7" font-size="18" font-family="Segoe UI, sans-serif">15-φ10.0 貫通穴</text>
+  <text x="524" y="208" fill="#eef2f7" font-size="18" font-family="Segoe UI, sans-serif">5 列 x 3 段</text>
+  <text x="524" y="238" fill="#eef2f7" font-size="16" font-family="Segoe UI, sans-serif">X: 40 / 55 / 55 / 55 / 55 / 40</text>
+  <text x="524" y="262" fill="#eef2f7" font-size="16" font-family="Segoe UI, sans-serif">Y: 40 / 60 / 60 / 40</text>
+
+  <rect x="42" y="254" width="896" height="116" rx="18" fill="#171d26" stroke="#314155" />
+  <text x="62" y="286" fill="#f7b955" font-size="15" font-family="Segoe UI, sans-serif">NOTES</text>
+  <text x="62" y="286" fill="#a6b0bf" font-size="16" font-family="Segoe UI, sans-serif">- 角部 C1</text><text x="62" y="312" fill="#a6b0bf" font-size="16" font-family="Segoe UI, sans-serif">- バリ・カエリ除去</text>
+  <text x="524" y="286" fill="#a6b0bf" font-size="16" font-family="Segoe UI, sans-serif">表面処理: 図面記載なし</text>
+  <text x="524" y="312" fill="#a6b0bf" font-size="16" font-family="Segoe UI, sans-serif">熱処理: なし</text>
+  <text x="524" y="338" fill="#a6b0bf" font-size="16" font-family="Segoe UI, sans-serif">概算工程: プレート抜き 1 / 通し穴 15</text>
+</svg>

@@ -1,0 +1,53 @@
+{
+  "part_key": "cad_input_dxf_guide_block_b",
+  "part_name": "CAD入力デモ DXF / サンプルガイドブロック B",
+  "drawing_reference": "src/sample_data/public_demo_parts/sample_guide_block_b/sample_guide_block_b.dxf",
+  "quantity": 1,
+  "service_family": "machining",
+  "service_family_label": "切削部品",
+  "process_mode": "estimated",
+  "process_note": "DXF の外形と円要素を上面形状として読み、part_spec.json の寸法・材質・処理条件を使って切削部品へ分類しています。",
+  "stock_dimensions_mm": {
+    "length": 120.0,
+    "width": 70.0,
+    "height": 45.0
+  },
+  "material": {
+    "mode": "user_specified",
+    "code": "A5052",
+    "note": "材質 A5052 は part_spec.json 記載を採用しています。"
+  },
+  "surface_treatment": {
+    "mode": "user_specified",
+    "id": "surf_anodize_white",
+    "note": "表面処理は notes_ja.md / part_spec.json の白アルマイトを、デモ用マスター上の アルマイト（白） に対応付けています。"
+  },
+  "heat_treatment": {
+    "mode": "drawing_spec",
+    "id": "heat_none",
+    "note": "熱処理なしは part_spec.json 記載を採用しています。"
+  },
+  "process_plan": [
+    {
+      "id": "proc_machining_profile",
+      "count": 1,
+      "note": "120 x 70 x 45 のブロック外形加工として計上。"
+    },
+    {
+      "id": "proc_machining_through_hole",
+      "count": 5,
+      "note": "中心 φ32 x 1 と取付 φ8 x 4 を通し穴として合算計上。"
+    }
+  ],
+  "assumptions": [
+    "DXF は上面基準の 2D 形状として扱い、厚み 45 mm は part_spec.json の値を採用しています。",
+    "DXF の円要素 5 個はすべて穴として扱い、中心の大径穴と四隅取付穴に分けて解釈しています。",
+    "想定工程の面取りは notes_ja.md にあるものの、デモ用工程マスターに独立費目がないため工程費へ含めています。",
+    "価格はデモ用マスターに基づく概算であり、正式見積の単価体系とは一致しません。"
+  ],
+  "warnings": [
+    "この見積は DXF と付随メタ情報から作ったデモ用概算です。正式見積には使えません。",
+    "DXF 単独では厚みや材質は分からないため、part_spec.json への依存があります。",
+    "中心 φ32 穴の公差、面粗さ、面取り量、取付穴精度はこのデモでは反映していません。"
+  ]
+}

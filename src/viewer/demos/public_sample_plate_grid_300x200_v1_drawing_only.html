@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>図面画像単体入力デモ - ベースプレート 300x200</title>
+  <link rel="stylesheet" href="../shared/styles_2d.css" />
+</head>
+<body
+  data-analysis="../assets/public_sample_plate_grid_300x200_v1_drawing_only/analysis.json"
+  data-manifest="../assets/public_sample_plate_grid_300x200_v1_drawing_only/manifest.json"
+  data-estimate="../assets/public_sample_plate_grid_300x200_v1_drawing_only/estimate_input.json"
+  data-master-base="../assets/demo_master"
+>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">Drawing Image Only Demo</p>
+      <h1>図面画像単体入力デモ</h1>
+      <p class="subline">対象: ベースプレート 300 x 200 / 入力は図面画像のみ</p>
+      <p class="lede">
+        自作した図面画像だけを入力にして、図面から読める条件を整理し、概算見積までつなぐデモです。
+        2D CAD と 3D CAD は使わず、図面画像からどこまで進められるかに絞っています。
+      </p>
+    </section>
+
+    <section class="source-card">
+      <div class="section-head">
+        <div>
+          <h2>入力サマリー</h2>
+          <p class="subline">図面画像から固定した寸法、穴、見積分類の要約</p>
+        </div>
+        <span class="chip">Drawing only</span>
+      </div>
+      <div id="cad-summary" class="summary-grid"></div>
+      <div id="cad-sections" class="assumption-grid estimate-section"></div>
+    </section>
+
+    <section class="source-card">
+      <div class="section-head">
+        <div>
+          <h2>概算見積</h2>
+          <p class="subline">図面記載で固定できる条件と、デモ用マスターを使った概算</p>
+        </div>
+        <span class="chip">Quote from drawing</span>
+      </div>
+      <div id="estimate-summary" class="summary-grid"></div>
+      <div id="estimate-details" class="estimate-section"></div>
+      <div id="estimate-assumptions" class="estimate-section"></div>
+    </section>
+
+    <section id="views" class="views"></section>
+  </main>
+
+  <script type="module" src="../shared/cad_analysis.js"></script>
+  <script type="module" src="../shared/quote_2d.js"></script>
+</body>
+</html>

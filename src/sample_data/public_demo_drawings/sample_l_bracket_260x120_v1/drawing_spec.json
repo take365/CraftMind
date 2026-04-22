@@ -1,0 +1,50 @@
+{
+  "key": "sample_l_bracket_260x120_v1",
+  "name_ja": "Lブラケット",
+  "drawing_no": "LB-001",
+  "source_type": "self_authored_image",
+  "authoring_note": "ChatGPT generated public-safe drawing image. Image file should be placed manually in this folder.",
+  "recommended_filename": "sample_l_bracket_260x120_v1_drawing.png",
+  "material": "SS400",
+  "surface_treatment": "なし",
+  "heat_treatment": "なし",
+  "dimensions_mm": {
+    "flat_length": 260.0,
+    "flat_width": 120.0,
+    "thickness": 6.0,
+    "flange_height": 40.0
+  },
+  "hole_pattern": {
+    "top_flange_holes": {
+      "count": 4,
+      "diameter_mm": 10.0
+    },
+    "base_holes": {
+      "count": 2,
+      "diameter_mm": 14.0
+    }
+  },
+  "bend_conditions": [
+    {
+      "step_no": 1,
+      "angle_deg": 90.0,
+      "inner_r_mm": 6.0,
+      "side": "inner"
+    },
+    {
+      "step_no": 2,
+      "angle_deg": 90.0,
+      "inner_r_mm": 6.0,
+      "side": "inner"
+    }
+  ],
+  "chain_dimensions_mm": {
+    "x": [40.0, 90.0, 40.0, 90.0],
+    "y": [30.0, 60.0, 30.0]
+  },
+  "notes_ja": [
+    "指示無き角は R2",
+    "バリ・カエリ除去",
+    "一般公差 ±0.5"
+  ]
+}

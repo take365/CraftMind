@@ -1,0 +1,8 @@
+<svg viewBox="0 0 860 360" xmlns="http://www.w3.org/2000/svg">
+  <rect x="120" y="92" width="620" height="180" fill="none" stroke="#e5ecf5" stroke-width="2.2"/>
+  <path d="M120 182 H740" stroke="#65707d" stroke-width="1.2" stroke-dasharray="6 5"/>
+  <circle cx="430.00" cy="220.00" r="69.33" fill="none" stroke="#8bffa8" stroke-width="2.2" /><circle cx="256.67" cy="245.71" r="17.33" fill="none" stroke="#8bffa8" stroke-width="2.2" /><circle cx="603.33" cy="245.71" r="17.33" fill="none" stroke="#8bffa8" stroke-width="2.2" /><circle cx="256.67" cy="194.29" r="17.33" fill="none" stroke="#8bffa8" stroke-width="2.2" /><circle cx="603.33" cy="194.29" r="17.33" fill="none" stroke="#8bffa8" stroke-width="2.2" />
+  <text x="120" y="54" fill="#a6b0bf" font-size="20" font-family="Segoe UI, sans-serif">見積用 feature スケッチ</text>
+  <text x="120" y="314" fill="#a6b0bf" font-size="18" font-family="Segoe UI, sans-serif">外形 120.0 x 70.0 mm / 推定穴数 5 / 代表半径 406.40 mm</text>
+  <text x="120" y="338" fill="#a6b0bf" font-size="14" font-family="Segoe UI, sans-serif">板厚、材質、表面処理は DXF 単独では取れないため仮定が必要</text>
+</svg>

@@ -1,0 +1,226 @@
+{
+  "schema_version": "demo-surface-treatment-master-v1",
+  "pricing_note": "Demo-only prices. Base + piece pricing.",
+  "items": [
+    {
+      "id": "surf_none",
+      "display_name": "なし",
+      "category": "none",
+      "service_families": ["machining", "sheet_metal", "turning"],
+      "demo_base_price_jpy": 0,
+      "demo_piece_price_jpy": 0
+    },
+    {
+      "id": "surf_black_oxide",
+      "display_name": "四三酸化鉄皮膜（黒染め）",
+      "category": "conversion",
+      "service_families": ["machining", "sheet_metal", "turning"],
+      "demo_base_price_jpy": 500,
+      "demo_piece_price_jpy": 120
+    },
+    {
+      "id": "surf_electroless_nickel",
+      "display_name": "無電解ニッケルメッキ",
+      "category": "plating",
+      "service_families": ["machining", "sheet_metal", "turning"],
+      "demo_base_price_jpy": 1200,
+      "demo_piece_price_jpy": 260
+    },
+    {
+      "id": "surf_trivalent_white",
+      "display_name": "三価クロメート（白）",
+      "category": "conversion",
+      "service_families": ["machining", "sheet_metal", "turning"],
+      "demo_base_price_jpy": 700,
+      "demo_piece_price_jpy": 160
+    },
+    {
+      "id": "surf_trivalent_black",
+      "display_name": "三価クロメート（黒）",
+      "category": "conversion",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 760,
+      "demo_piece_price_jpy": 170
+    },
+    {
+      "id": "surf_anodize_white",
+      "display_name": "アルマイト（白）",
+      "category": "anodize",
+      "service_families": ["machining", "sheet_metal", "turning"],
+      "demo_base_price_jpy": 850,
+      "demo_piece_price_jpy": 180
+    },
+    {
+      "id": "surf_anodize_black",
+      "display_name": "アルマイト（黒）",
+      "category": "anodize",
+      "service_families": ["machining", "sheet_metal", "turning"],
+      "demo_base_price_jpy": 900,
+      "demo_piece_price_jpy": 190
+    },
+    {
+      "id": "surf_anodize_black_matte",
+      "display_name": "アルマイト（つや消し黒）",
+      "category": "anodize",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 980,
+      "demo_piece_price_jpy": 210
+    },
+    {
+      "id": "surf_electrolytic_nickel",
+      "display_name": "電解ニッケルメッキ",
+      "category": "plating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1100,
+      "demo_piece_price_jpy": 240
+    },
+    {
+      "id": "surf_silver_plating",
+      "display_name": "銀メッキ",
+      "category": "plating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1800,
+      "demo_piece_price_jpy": 420
+    },
+    {
+      "id": "surf_gold_plating",
+      "display_name": "金メッキ",
+      "category": "plating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 2800,
+      "demo_piece_price_jpy": 780
+    },
+    {
+      "id": "surf_low_temp_black_chrome",
+      "display_name": "低温黒色クロムメッキ",
+      "category": "plating",
+      "service_families": ["turning"],
+      "demo_base_price_jpy": 1800,
+      "demo_piece_price_jpy": 380
+    },
+    {
+      "id": "surf_hard_chrome",
+      "display_name": "硬質クロムメッキ",
+      "category": "plating",
+      "service_families": ["turning"],
+      "demo_base_price_jpy": 2200,
+      "demo_piece_price_jpy": 480
+    },
+    {
+      "id": "surf_dlc",
+      "display_name": "DLC",
+      "category": "coating",
+      "service_families": ["turning"],
+      "demo_base_price_jpy": 3200,
+      "demo_piece_price_jpy": 720
+    },
+    {
+      "id": "surf_nitriding_process",
+      "display_name": "窒化処理",
+      "category": "surface_hardening",
+      "service_families": ["turning"],
+      "demo_base_price_jpy": 2600,
+      "demo_piece_price_jpy": 540
+    },
+    {
+      "id": "surf_powder_black",
+      "display_name": "粉体塗装 ブラック",
+      "category": "powder_coating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1000,
+      "demo_piece_price_jpy": 250,
+      "color": "ブラック",
+      "gloss": "半ツヤ"
+    },
+    {
+      "id": "surf_powder_white",
+      "display_name": "粉体塗装 ホワイト",
+      "category": "powder_coating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1000,
+      "demo_piece_price_jpy": 250,
+      "color": "ホワイト",
+      "gloss": "全ツヤ"
+    },
+    {
+      "id": "surf_powder_yellow",
+      "display_name": "粉体塗装 イエロー",
+      "category": "powder_coating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1050,
+      "demo_piece_price_jpy": 260,
+      "color": "イエロー",
+      "gloss": "全ツヤ"
+    },
+    {
+      "id": "surf_powder_light_cream",
+      "display_name": "粉体塗装 ライトクリーム",
+      "category": "powder_coating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1050,
+      "demo_piece_price_jpy": 260,
+      "color": "ライトクリーム",
+      "gloss": "半ツヤ"
+    },
+    {
+      "id": "surf_powder_cream",
+      "display_name": "粉体塗装 クリーム",
+      "category": "powder_coating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1050,
+      "demo_piece_price_jpy": 260,
+      "color": "クリーム",
+      "gloss": "半ツヤ"
+    },
+    {
+      "id": "surf_powder_old_lace",
+      "display_name": "粉体塗装 オールドレース",
+      "category": "powder_coating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1080,
+      "demo_piece_price_jpy": 270,
+      "color": "オールドレース",
+      "gloss": "半ツヤ"
+    },
+    {
+      "id": "surf_powder_gray",
+      "display_name": "粉体塗装 グレー",
+      "category": "powder_coating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1000,
+      "demo_piece_price_jpy": 250,
+      "color": "グレー",
+      "gloss": "半ツヤ"
+    },
+    {
+      "id": "surf_powder_beige",
+      "display_name": "粉体塗装 ベージュ",
+      "category": "powder_coating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1000,
+      "demo_piece_price_jpy": 250,
+      "color": "ベージュ",
+      "gloss": "半ツヤ"
+    },
+    {
+      "id": "surf_powder_off_pale_gray",
+      "display_name": "粉体塗装 オフペールグレー",
+      "category": "powder_coating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1040,
+      "demo_piece_price_jpy": 255,
+      "color": "オフペールグレー",
+      "gloss": "半ツヤ"
+    },
+    {
+      "id": "surf_powder_dark_gray",
+      "display_name": "粉体塗装 ダークグレー",
+      "category": "powder_coating",
+      "service_families": ["sheet_metal"],
+      "demo_base_price_jpy": 1020,
+      "demo_piece_price_jpy": 255,
+      "color": "ダークグレー",
+      "gloss": "半ツヤ"
+    }
+  ]
+}

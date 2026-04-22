@@ -1,0 +1,62 @@
+{
+  "schema_version": "demo-heat-treatment-master-v1",
+  "pricing_note": "Demo-only prices. Base + piece pricing.",
+  "items": [
+    {
+      "id": "heat_none",
+      "display_name": "なし",
+      "category": "none",
+      "service_families": ["machining", "turning"],
+      "demo_base_price_jpy": 0,
+      "demo_piece_price_jpy": 0
+    },
+    {
+      "id": "heat_full_quench",
+      "display_name": "全体焼入れ（ズブ焼入れ）",
+      "category": "quench",
+      "service_families": ["machining", "turning"],
+      "demo_base_price_jpy": 1500,
+      "demo_piece_price_jpy": 280
+    },
+    {
+      "id": "heat_partial_quench",
+      "display_name": "部分焼入れ",
+      "category": "quench",
+      "service_families": ["turning"],
+      "demo_base_price_jpy": 1800,
+      "demo_piece_price_jpy": 360
+    },
+    {
+      "id": "heat_induction",
+      "display_name": "高周波焼入れ",
+      "category": "induction",
+      "service_families": ["machining", "turning"],
+      "demo_base_price_jpy": 1900,
+      "demo_piece_price_jpy": 420
+    },
+    {
+      "id": "heat_nitriding",
+      "display_name": "窒化焼入れ",
+      "category": "nitriding",
+      "service_families": ["machining"],
+      "demo_base_price_jpy": 2300,
+      "demo_piece_price_jpy": 480
+    },
+    {
+      "id": "heat_vacuum_quench",
+      "display_name": "真空焼入れ",
+      "category": "quench",
+      "service_families": ["machining", "turning"],
+      "demo_base_price_jpy": 2600,
+      "demo_piece_price_jpy": 540
+    },
+    {
+      "id": "heat_carburizing",
+      "display_name": "浸炭焼入れ",
+      "category": "carburizing",
+      "service_families": ["machining", "turning"],
+      "demo_base_price_jpy": 2400,
+      "demo_piece_price_jpy": 560
+    }
+  ]
+}

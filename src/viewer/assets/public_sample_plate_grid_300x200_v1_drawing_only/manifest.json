@@ -1,0 +1,15 @@
+{
+  "source_file": "src/sample_data/public_demo_drawings/sample_plate_grid_300x200_v1/sample_plate_grid_300x200_v1_drawing.png",
+  "views": [
+    {
+      "key": "drawing_only",
+      "title": "図面画像と読取要約",
+      "subtitle": "図面画像単体入力から、見積用の条件整理まで",
+      "crop_path": "./assets/public_sample_plate_grid_300x200_v1_drawing_only/drawing.png",
+      "svg_path": "./assets/public_sample_plate_grid_300x200_v1_drawing_only/drawing_summary.svg",
+      "input_panel_label": "図面画像入力",
+      "feature_panel_label": "読取結果の要約",
+      "comparison_note": "左は入力図面画像、右はそこから見積に使う条件を整理した要約です。"
+    }
+  ]
+}
